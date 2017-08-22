@@ -1,7 +1,7 @@
-# Docker image for help
+# Helper Image Docker
 
 This image is for help a used cluster by rancher or other orchestral tools.
-The docker container is builded with Image base, **ubuntu** latest
+The docker container is builded with Image base, **Ubuntu 16.04** 
 
 #### Installed Tools
 * ***MongoDB Latest***
@@ -17,17 +17,17 @@ The docker container is builded with Image base, **ubuntu** latest
 
 #### Create image.
 ```sh
-sudo docker build -t inviron/docker-container-help:latest .
+sudo docker build -t thiagozs/helper-image .
 ```
 
 #### Running up
 ```sh
-sudo docker run -d --name=ubuntu-image-help -t inviron/docker-container-help:latest
+sudo docker run -d --name=linux-image -t thiagozs/helper-image
 ```
 
 #### Execute shell
 ```sh
-sudo docker exec -it ubuntu-image-help /bin/bash
+sudo docker exec -it linux-image /bin/bash
 ```
 
 ### License 
